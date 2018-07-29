@@ -11,11 +11,12 @@ set __fish_git_prompt_showupstream 'yes'
 set __fish_git_prompt_color_branch yellow
 
 # status chars
-set __fish_git_prompt_char_dirtystate '!#'
-set __fish_git_prompt_char_stagedstate '->'
-set __fish_git_prompt_char_stashstate '<-|'
-set __fish_git_prompt_char_upstream_ahead '^|'
-set __fish_git_prompt_char_upstream_behind '_|'
+set __fish_git_prompt_char_dirtystate '⚡'
+set __fish_git_prompt_char_stagedstate '→'
+set __fish_git_prompt_char_untrackedfiles '☡'
+set __fish_git_prompt_char_stashstate '↩'
+set __fish_git_prompt_char_upstream_ahead '+'
+set __fish_git_prompt_char_upstream_behind '-'
 
 function fish_prompt
 	set last_status $status
@@ -25,6 +26,4 @@ function fish_prompt
 	printf '%s ' (__fish_git_prompt)
 	set_color normal
 end
-
-
 
