@@ -10,7 +10,7 @@ alias vim='nvim'
 PS1='[\u@\h \W]\$ '
 
 # tmux
-;[[ -z "$TMUX" && -n "$USE_TMUX" ]] && {
+[[ -z "$TMUX" && -n "$USE_TMUX" ]] && {
     [[ -n "$ATTACH_ONLY" ]] && {
         tmux a 2>/dev/null || {
             cd && exec tmux
