@@ -8,10 +8,4 @@
 alias ls='ls --color=auto'
 alias vim='nvim'
 PS1='[\u@\h \W]\$ '
-#export EDITOR="nvim"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
-
-
-exec fish
