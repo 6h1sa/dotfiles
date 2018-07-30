@@ -27,6 +27,8 @@ if dein#load_state('/home/ia/.cache/dein')
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
 
   call dein#add('mattn/emmet-vim')
+  call dein#add('tomasr/molokai')
+
   " Required:
   call dein#end()
   call dein#save_state()
@@ -42,3 +44,7 @@ syntax enable
 "endif
 
 "End dein Scripts-------------------------
+
+" color scheme
+syntax on
+colorscheme molokai
