@@ -29,6 +29,8 @@ if dein#load_state('/home/ia/.cache/dein')
   call dein#add('mattn/emmet-vim')
   call dein#add('tomasr/molokai')
 
+  call dein#add('tpope/vim-rails')
+
   " Required:
   call dein#end()
   call dein#save_state()
