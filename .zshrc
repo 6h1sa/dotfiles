@@ -1,6 +1,3 @@
-export PATH="$HOME/.rbenv:$PATH"
-eval "$(rbenv init - zsh)"
-
 # history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -33,11 +30,11 @@ alias ls='ls --color=auto'
 # chpwd() { ls -ltrG }
 
 # comp menu
-#zmodload zsh/complist
-#bindkey -M menuselect 'h' vi-backward-char
-#bindkey -M menuselect 'j' vi-down_line_or_history
-#bindkey -M menuselect 'k' vi-up-line-or-histry
-#bindkey -M menuselect 'l' vi-forward-char
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'j' vi-down_line_or_history
+bindkey -M menuselect 'k' vi-up-line-or-histry
+bindkey -M menuselect 'l' vi-forward-char
 
 function __zsh__prompt {
 	local RED="\[\033[0;31m\]"
