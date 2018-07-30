@@ -1,3 +1,5 @@
+export PATH="$HOME/.rbenv:$PATH"
+eval "$(rbenv init - zsh)"
 
 # history
 HISTFILE=~/.zsh_history
@@ -11,19 +13,19 @@ setopt hist_ignore_space
 bindkey -v
 
 # comp
-zstyle :compinstall filename '~/.zshrc'
+#zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 
 setopt auto_cd
-setopt auto_pushd
+#setopt auto_pushd
 setopt pushd_ignore_dups
 setopt extended_glob
 
 setopt correct
 
 autoload -Uz colors && colors
-zstyle ':completion:*' list-lolord "${LS_COLORS}"
+zstyle ':completion:*' list-colors "${LS_COLORS}"
 
 alias ls='ls --color=auto'
 
@@ -31,11 +33,11 @@ alias ls='ls --color=auto'
 # chpwd() { ls -ltrG }
 
 # comp menu
-zmodload zsh/complist
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'j' vi-down_line_or_history
-bindkey -M menuselect 'k' vi-up-line-or-histry
-bindkey -M menuselect 'l' vi-forward-char
+#zmodload zsh/complist
+#bindkey -M menuselect 'h' vi-backward-char
+#bindkey -M menuselect 'j' vi-down_line_or_history
+#bindkey -M menuselect 'k' vi-up-line-or-histry
+#bindkey -M menuselect 'l' vi-forward-char
 
 function __zsh__prompt {
 	local RED="\[\033[0;31m\]"
