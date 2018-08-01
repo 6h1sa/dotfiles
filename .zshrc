@@ -12,7 +12,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vim='nvim'
 
-alias la='ls --la'
+alias la='ls -la'
 
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
