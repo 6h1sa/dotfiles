@@ -42,7 +42,7 @@ function __zsh__prompt {
 	local RED="\[\033[0;31m\]"
 	local RED='%{$fg[red]%}'
 	local GREEN='%{$fg[green]%}'
-	local RESET='$reset_color'
+	local RESET='%{$reset_color%}'
 	if [ -n "$SSH_CONNECTION" ]; then
 		printf '%s[%s]%s ' "$RED" "$(uname -n)" "$RESET"
 	fi
