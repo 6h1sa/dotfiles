@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/bash -e
 DOT_DIRECTORY="${HOME}/dotfiles"
 
 cd ${DOT_DIRECTORY}
 for f in .??*
   do
-    [[ "${F}" = ".git" ]] && continue
+    [[ "${f}" = ".git" ]] && continue
     [[ "${f}" = ".DS_Store" ]] && continue
 
     echo "$f"
