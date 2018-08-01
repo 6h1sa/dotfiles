@@ -1,30 +1,32 @@
-# history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
-
-# keybind -v vim like
 bindkey -v
 
-# comp
-#zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 autoload -Uz compinit
 compinit
 
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias vim='nvim'
+
+alias la='ls --la'
+
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+
 setopt auto_cd
-#setopt auto_pushd
+setopt auto_pushd
 setopt pushd_ignore_dups
-setopt extended_glob
+#setopt extended_glob
 
 setopt correct
 
 autoload -Uz colors && colors
 zstyle ':completion:*' list-colors "${LS_COLORS}"
 
-alias ls='ls --color=auto'
 
 # cd run ls
 # chpwd() { ls -ltrG }
