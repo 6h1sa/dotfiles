@@ -27,6 +27,8 @@ if dein#load_state('/home/ia/.cache/dein')
   call dein#add('Shougo/deol.nvim', { 'rev': '01203d4c9' })
 
   call dein#add('mattn/emmet-vim')
+  call dein#add('editorconfig/editorconfig-vim')
+  
   call dein#add('tomasr/molokai')
 
   call dein#add('tpope/vim-rails')
