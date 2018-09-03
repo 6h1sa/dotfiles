@@ -28,7 +28,7 @@ function __bash__prompt {
 	if [ -n "$SSH_CONNECTION" ]; then
 		printf '%s[%s]%s ' "$RED" "$(uname -n)" "$RESET"
 	fi
-	printf '%s\w~%s $ ' "$GREEN" "$RESET"
+	printf '%s\w%s $ ' "$GREEN" "$RESET"
 }
 
 
