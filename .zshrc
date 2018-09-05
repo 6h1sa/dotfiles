@@ -53,5 +53,15 @@ type prompt &> /dev/null && prompt off
 setopt PROMPT_SUBST
 PROMPT="$(__zsh__prompt)"
 
+autoload -Uz vcs_info
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+
+RPROPT="${vcs_info_msg_0_}"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
