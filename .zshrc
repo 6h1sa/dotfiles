@@ -52,3 +52,6 @@ function __zsh__prompt {
 type prompt &> /dev/null && prompt off
 setopt PROMPT_SUBST
 PROMPT="$(__zsh__prompt)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
