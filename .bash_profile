@@ -9,5 +9,8 @@ if [[ -e ~/.rbenv ]] ; then
   eval "$(rbenv init -)"
 fi
 
+eval $(opam env)
+
 export HISTSIZE=2000
 #export HISTCONTROL=ignoredups
+
