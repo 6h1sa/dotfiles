@@ -65,3 +65,4 @@ RPROMPT='${vcs_info_msg_0_}'
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(opam env)"
