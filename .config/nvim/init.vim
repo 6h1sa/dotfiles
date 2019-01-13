@@ -2,6 +2,19 @@ set termguicolors
 
 set number
 
+nnoremap <Down>	gj
+nnoremap <Up>	gk
+
+"set showbreak=
+
+
+nnoremap あ a
+nnoremap い i
+nnoremap う u
+nnoremap お o
+nnoremap っｄ dd
+nnoremap っｙ yy
+
 
 "dein Scripts-----------------------------
 if &compatible
