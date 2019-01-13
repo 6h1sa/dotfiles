@@ -4,6 +4,12 @@ rbenv init - | source
 # fish
 set fish_greeting
 
+# WSL open 
+if string match -q '*Microsoft*' (uname -a);
+	alias open="cmd.exe /c start"
+	alias xdg-open=open
+end
+
 # fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showstashstate 'yes'
