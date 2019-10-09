@@ -1,5 +1,7 @@
 # rbenv
-rbenv init - | source
+if type "rbenv" >/dev/null 2>&1;
+	rbenv init - | source
+end
 
 # fish
 set fish_greeting
