@@ -14,11 +14,11 @@ $pdf_mode	  = 4; # generates pdf via dvipdfmx
 $pvc_view_file_via_temporary = 0;
 
 # Use Skim as a previewer
-#$pdf_previewer    = "open -ga /Applications/Skim.app";
+#$pdf_previewer    = 'open -ga /Applications/Skim.app';
 
-$clean_ext = "ltjruby run.xml bbl bcf blg ";
+$clean_ext = 'ltjruby run.xml bbl bcf blg ';
 
 # Output Dir
 
-$aux_dir = "aux/";
-#out_dir = "out/";
+#$aux_dir = 'aux/';
+#out_dir = 'out/';
