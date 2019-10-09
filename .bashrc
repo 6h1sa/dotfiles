@@ -21,14 +21,18 @@ alias vim='nvim'
     exec tmux
 }
 
+if [[ `uname -a` == *Microsoft* ]]; then
+  alias open='cmd.exe /c start'
+fi
+
 function __bash__prompt {
 	local RED="\[\033[0;31m\]"
-	local GREEN="\[\033[0;21m\]"
+	local GREEN="\[\033[0;32m\]"
 	local RESET="\[\033[0m\]"
 	if [ -n "$SSH_CONNECTION" ]; then
-		printf '%s[%s]%s ' "$RED" "$(uname -n)" "$RESET"
+		printf '%s%s[%s]%s ' "$RESET" "$RED" "$(uname -n)" "$RESET"
 	fi
-	printf '%s\w%s $ ' "$GREEN" "$RESET"
+	printf '%s%s\w%s $ ' "$RESET" "$GREEN" "$RESET"
 }
 
 
